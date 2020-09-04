@@ -18,6 +18,18 @@ namespace CursoLinq
             foreach (int num in valores)
                 Console.WriteLine(num);
             Console.ReadLine();
+
+            Console.WriteLine("-------------------------------");
+
+            string[] postres = { "pay de manzana", "pastel de chocolate", "manzana caramelizada", "fresas con crema" };
+
+            IEnumerable<string> encontrados = from p in postres
+                                              where p.Contains("manzana")
+                                              orderby p
+                                              select p;
+            foreach (string postre in encontrados)
+                Console.WriteLine(postre);
+            Console.ReadLine();
         }
     }
 }
