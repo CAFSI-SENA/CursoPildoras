@@ -30,6 +30,9 @@ namespace CursoLinq
             foreach (string postre in encontrados)
                 Console.WriteLine(postre);
             Console.ReadLine();
+
+            Console.WriteLine("---------------------------------");
         }
+
     }
 }
